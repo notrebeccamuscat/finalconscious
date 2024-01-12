@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conscious.</title>
+    <link rel="stylesheet" href="style.contactform.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <!-- Creates the header section with the menu tabs 
+   Header bar is split into two - logo and header right which contains another flexbox-->
+   <div class="header-logo"> 
+     <h2>Conscious.</h2>
+   </div>
+   <div class="header-right">
+     <!-- Flexbox used to sort menu items -->
+     <div class="header-menu">
+           <a href="/index.html">🏠 Home</a>
+            <a href="/carausel.html">💡 Exhibition</a>
+            <a href="/index.html#principles">🎨 Artists</a>
+            <a href="/sponsors.html">🚀 Sponsors</a>
+            <a href="/contactform.html">🧩 Contact</a>
+     </div>
+       <div class="header-switch">
+       <div class="flicker"></div>
+       <div class="moon"></div>
+       <div class="sun"></div>
+     </p>
+     </div>
+   </div>
+  </header>
+      
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Anne" required />
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Borg" required />
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" required />
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <select name="month" id="select-choice" required>
+                <option value="" disabled selected>Month</option>
+                <option value="january">Jan</option>
+                <option value="february">Feb</option>
+                <option value="march">Mar</option>
+                <option value="april">Apr</option>
+                <option value="may">May</option>
+                <option value="june">Jun</option>
+                <option value="july">Jul</option>
+                <option value="august">Aug</option>
+                <option value="september">Sep</option>
+                <option value="october">Oct</option>
+                <option value="november">Nov</option>
+                <option value="december">Dec</option>
+            </select>
+            <select name="day" id="day" required>
+                <option value="" disabled selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                
+                
+            </select>
+            <select name="year" id="year" required>
+                <option value="" disabled selected>Year</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+               
+            </select>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Type anything you'd like..." rows="10" cols="50" required></textarea>
+        </div>
+        <div>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms" required />
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+    <!-- Connects to JS for event handlers -->
+
+  </body>
+</html>
